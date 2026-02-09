@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  {{> header}}
+  <title>{{common.title}}</title>
+</head>
+<body>
+  {{> top}}
+
+    <br/><br/><br/>
+    Anar a la pàgina <a href="/">principal</a>
+    <br/><br/><br/>
+
+  <h1>Llista de ciutats</h1>
+
+  <ul>
+    {{#each cities}}
+      <li>
+        <strong>{{name}}</strong>
+        —
+        {{lookup ../countries country}}
+        :
+        {{population}} habitants
+      </li>
+    {{/each}}
+  </ul>
+
+  <br/><br/><br/>
+  {{> footer}}
+</body>
+</html>
