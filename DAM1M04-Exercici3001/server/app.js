@@ -41,6 +41,26 @@ app.get('/', (req, res) => {
 
   res.render('index', data);
 });
+app.get('informe', (req, res) => {
+  const site = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'data', 'site.json'), 'utf8')
+  );
+  const countries = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'data', 'countries.json'), 'utf8')
+  );
+  const cities = JSON.parse(
+    fs.readFileSync(path.join(__dirname, 'data', 'cities.json'), 'utf8')
+  );
+
+  data = {
+    site: site,
+    countries:countries,
+    cities:cities
+
+  }
+
+  res.render('informe', data);
+});
 /*
 app.get('/cities', (req, res) => {
 
