@@ -26,7 +26,8 @@ app.set('view engine', 'hbs');
 hbs.registerHelper('gt', (a, b) => a > b);
 
 // Partials de Handlebars
-//hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
+hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
+
 
 // Route
 app.get('/', (req, res) => {
@@ -67,8 +68,7 @@ app.get('/cities', (req, res) => {
 */
 // Start server
 const httpServer = app.listen(port, () => {
-  console.log(`http://localhost:${port}`);
-  console.log(`http://localhost:${port}/cities`);
+  console.log(`http://localhost:${port}`)
 });
 
 // Graceful shutdown
