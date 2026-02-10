@@ -5,3 +5,29 @@
     text-decoration: underline;
     
 }
+
+.notice {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  padding: 10px 15px;
+  margin: 15px 0;
+  border-radius: 4px;
+  font-family: sans-serif;
+}
+
+/* Por defecto el aviso está oculto */
+.checkbox{
+    display: none;
+}
+.notice {
+  display: none;
+}
+.notice:hover{
+    color: red;
+}
+
+/* Si el checkbox está marcado, mostramos el aviso */
+#toggle-warning:checked + label + .notice {
+  display: block;
+}
