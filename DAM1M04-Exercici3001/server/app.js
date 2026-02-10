@@ -26,7 +26,7 @@ app.set('view engine', 'hbs');
 hbs.registerHelper('gt', (a, b) => a > b);
 
 // Partials de Handlebars
-hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
+//hbs.registerPartials(path.join(__dirname, 'views', 'partials'));
 
 // Route
 app.get('/', (req, res) => {
