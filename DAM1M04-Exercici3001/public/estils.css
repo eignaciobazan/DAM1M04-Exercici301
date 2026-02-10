@@ -23,7 +23,7 @@
 .notice {
   display: none;
 }
-.notice:hover{
+.oculto:hover{
     color: red;
 }
 
