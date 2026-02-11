@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
 
   res.render('index', data);
 });
-app.get('informe', (req, res) => {
+app.get('/informe', (req, res) => {
   const site = JSON.parse(
     fs.readFileSync(path.join(__dirname, 'data', 'site.json'), 'utf8')
   );

@@ -31,3 +31,21 @@
 #toggle-warning:checked + label + .notice {
   display: block;
 }
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.coastal {
+    background-color: #2196f3;
+    color: white;
+}
+
+.inland {
+    background-color: #777;
+    color: white;
+}
